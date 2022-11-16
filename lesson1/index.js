@@ -1,5 +1,5 @@
 const colors = require('colors')
-
+// домашнее задание 1
 let num1 = Math.round(process.argv[2])
 let num2 = Math.round(process.argv[3])
 let arrNumber = [];
@@ -22,11 +22,8 @@ if (isNaN(num1) || isNaN(num2)) {
         console.log(colors.bgRed('натуральных чисел нет'))
     } else {
         console.log(arrNumber);
-
         for (let i = 0; i < arrNumber.length; i++) {
-
             console.log(colors.red(arrNumber[i]));
-
             if (isNaN(arrNumber[i + 1])) {
                 break
             } else {
